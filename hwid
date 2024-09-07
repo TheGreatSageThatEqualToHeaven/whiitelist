@@ -18,7 +18,7 @@ local webhookURL = "https://discord.com/api/webhooks/1281744707323695156/BsB0-2d
 setclipboard(clientId)
 
 -- Define the script key you want to use
-local scriptKey = "40140995329"  -- Replace this with the actual key
+local scriptKey = ""  -- Replace this with the actual key
 
 -- URL for the JSON file containing key statuses
 local jsonUrl = 'https://raw.githubusercontent.com/TheGreatSageThatEqualToHeaven/testtt/main/keys.json'
