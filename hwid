@@ -1,3 +1,5 @@
+-- GitHub Script: hwid.lua
+
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local StarterGui = game:GetService("StarterGui")
@@ -17,8 +19,8 @@ local webhookURL = "https://discord.com/api/webhooks/1281744707323695156/BsB0-2d
 -- Set clipboard to the Client ID (if required)
 setclipboard(clientId)
 
--- Define the script key you want to use
-local scriptKey = ""  -- Replace this with the actual key
+-- Define the placeholder for the script key
+local scriptKey = "PLACEHOLDER_KEY"  -- This will be replaced with the actual key
 
 -- URL for the JSON file containing key statuses
 local jsonUrl = 'https://raw.githubusercontent.com/TheGreatSageThatEqualToHeaven/testtt/main/keys.json'
@@ -127,8 +129,8 @@ local whitelisted = isValidKeyAndHWID(scriptKey)
 if whitelisted then
     showNotification("Success", "You are whitelisted!")
 
-    -- Execute the external script from the provided URL
-    local scriptUrl = 'https://raw.githubusercontent.com/TheGreatSageThatEqualToHeaven/whiitelist/main/hwid'
+    -- Fetch and execute the external script
+    local scriptUrl = 'https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'
     local scriptContent = game:HttpGet(scriptUrl)
     
     -- Safely execute the script
